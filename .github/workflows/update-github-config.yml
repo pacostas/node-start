@@ -55,7 +55,7 @@ jobs:
 
     - name: Open Pull Request
       if: ${{ steps.commit.outputs.commit_sha != '' }}
-      uses: pacostas/github-config/actions/pull-request/open@main
+      uses: paketo-buildpacks/github-config/actions/pull-request/open@main
       with:
         token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
         title: "Updates github-config"
